@@ -12,7 +12,7 @@ const Form = (props) => {
     e.preventDefault();
     console.log("handle sumit is call ")
 
-    const response = await fetch("http://localhost:1000/contact", {  // these route is change to other routre
+    const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // these route is change to other routre
       // const response = await fetch(`${window.location.origin}/contact`, {
       method: "POST",
       headers: {
