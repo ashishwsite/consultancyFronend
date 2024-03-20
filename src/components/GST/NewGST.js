@@ -1,8 +1,16 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Form from "../Form/Form";
 import benifit from '../Home/Benefits.png'
 
-const NewGST = () => {
+const NewGST = ({setProgress}) => {
+//   useEffect(
+//     ()=>{
+// setProgress(40)
+// setTimeout(()=>{
+//   setProgress(100)
+// },2000)
+//     },[]
+//   )
   
   return (
     <div >
@@ -51,7 +59,6 @@ const NewGST = () => {
         </div>
       </div>
      </div>
-   
     </div>
   );
 };

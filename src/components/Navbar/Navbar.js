@@ -5,9 +5,9 @@ import "./NabbarSty.css";
 function Navbar() {
    // LOCATION hook used
    let loct=useLocation();
-  useEffect(()=>{
-    console.log("location is ", loct)
-   },[loct])
+  // useEffect(()=>{
+  //   // console.log("location is ", loct)
+  //  },[loct])
   return (
     // new navbar
     <div>

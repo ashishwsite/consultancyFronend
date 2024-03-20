@@ -1,7 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Form from "../Form/Form";
 
-const Contact = () => {
+const Contact = ({setProgress}) => {
+//   useEffect(
+//     ()=>{
+// setProgress(40);
+// setTimeout(()=>{
+//   setProgress(100)
+// },2000)
+//     },[]
+//   )
   return (
     <>
    <h1 style={{textAlign:'center'}}>Contact_us</h1>

@@ -1,7 +1,16 @@
-import React from "react";
+
+import React, {useEffect} from "react";
 import typeimg from "./types.jpg";
 
-const Services = () => {
+const Services = ({setProgress}) => {
+//   useEffect(
+//     ()=>{
+// setProgress(40);
+// setTimeout(()=>{
+//   setProgress(100)
+// },1000)
+//     },[]
+//   )
   return (
     <div>
       <div className="itrfill" style={{ border: "solid 2px" }}>

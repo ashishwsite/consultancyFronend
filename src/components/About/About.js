@@ -1,7 +1,15 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import { Link } from 'react-router-dom'
 
-const About = () => {
+const About = ({setProgress,progress}) => {
+	// useEffect(
+	// 	()=>{
+	// setProgress(40);
+	// setTimeout(()=>{
+	//   setProgress(100)
+	// },2000)
+	// 	},[]
+	//   )
   return (
     <section className="about-us-area about-us-2 pt-120 pb-90 pt-md-60 pb-md-10 pb-xs-10 pt-xs-60" style={{backgroundColor:'rgb(58, 58, 60)'}}>
 			<div className="container">

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './FormStyle.css'
 import { useNavigate } from "react-router-dom";
 const Form = (props) => {
+  const [btnclr,setbtnclr]=useState('green')
   let history =  useNavigate();
   const [credentials,setCredentails]=useState({name:"",email:"",phone:"",state:""})
   const onChange = (e) => {
@@ -11,7 +12,8 @@ const Form = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("handle sumit is call ")
-
+setbtnclr('red')
+//bad request sue to same email is present 
     const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // these route is change to other routre
       // const response = await fetch(`${window.location.origin}/contact`, {
       method: "POST",
@@ -58,11 +60,11 @@ const Form = (props) => {
            <input type='email'  value={credentials.email}  onChange={onChange} className="form-control" name="email"></input>
            <h6>state</h6>
            <input type='text' value={credentials.state}  onChange={onChange} className="form-control" name="state" ></input>
-           <button type ="submit" style={{border:'solid 3px',borderRadius:'4px',background:'yellowgreen',marginLeft:'7px'}}>Submit</button>
+           <button type ="submit" style={{border:'solid 3px',borderRadius:'4px',background:btnclr,marginLeft:'7px'}}>Submit</button>
         </form>
       
     </div>
-  )
+  ) 
 }
 
 export default Form

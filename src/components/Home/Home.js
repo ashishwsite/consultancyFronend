@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import h1 from "./h6.jpg";
 import h2 from "./h7.jpg";
 import h3 from "./h8.jpg";
@@ -8,7 +8,15 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home({setProgress}) {
+  useEffect(
+    ()=>{
+setProgress(40);
+setTimeout(()=>{
+  setProgress(100)
+},2000)
+    },[]
+  )
   return (
       <div>
        <div style={{ display:'flex', justifyContent:'center',marginTop:'12px', padding:'5px'}}><span style={{fontSize:'35px',color:'black'}}>Easiest way of e-filling your Income Tax Return in India </span></div>

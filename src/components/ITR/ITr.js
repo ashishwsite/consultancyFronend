@@ -1,9 +1,17 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import typeimg from "./types.jpg";
 import "./itrc.css";
 import { Link } from "react-router-dom";
 
-const ITr = () => {
+const ITr = ({setProgress,progress}) => {
+  useEffect(
+    ()=>{
+setProgress(40);
+setTimeout(()=>{
+  setProgress(100)
+},2000)
+    },[]
+  )
   return (
     <div>
       <div className="container">
