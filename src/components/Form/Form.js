@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import './FormStyle.css'
+
 import { useNavigate } from "react-router-dom";
+// import dotenv from 'dotenv';
+// dotenv.config();
+
 const Form = (props) => {
+  // const Backlink=process.env.BACKEND
   const [btnclr,setbtnclr]=useState('green')
   let history =  useNavigate();
   const [credentials,setCredentails]=useState({name:"",email:"",phone:"",state:""})
@@ -15,7 +20,8 @@ const Form = (props) => {
 setbtnclr('red')
 //bad request sue to same email is present 
     // const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // render vala backend
-    const response = await fetch("https://taxconsultancy.vercel.app/contact", {  // vercel vala backend
+    // const response = await fetch(`${Backlink}/contact`, {  // hide backend link
+      const response = await fetch('https://taxconsultancy.vercel.app/contact', {  // vercel vala backend
       method: "POST",
       headers: {
         "Content-Type": "application/json",
