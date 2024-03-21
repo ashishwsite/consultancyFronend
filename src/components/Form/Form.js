@@ -15,7 +15,7 @@ const Form = (props) => {
 setbtnclr('red')
 //bad request sue to same email is present 
     // const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // render vala backend
-    const response = await fetch("https://vercel-backend-tax.vercel.app/contact", {  // vercel vala backend
+    const response = await fetch("https://taxconsultancy.vercel.app/contact", {  // vercel vala backend
       method: "POST",
       headers: {
         "Content-Type": "application/json",
