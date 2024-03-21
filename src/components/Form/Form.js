@@ -14,8 +14,8 @@ const Form = (props) => {
     console.log("handle sumit is call ")
 setbtnclr('red')
 //bad request sue to same email is present 
-    const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // these route is change to other routre
-      // const response = await fetch(`${window.location.origin}/contact`, {
+    // const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // render vala backend
+    const response = await fetch("https://vercel-backend-tax.vercel.app/contact", {  // vercel vala backend
       method: "POST",
       headers: {
         "Content-Type": "application/json",
