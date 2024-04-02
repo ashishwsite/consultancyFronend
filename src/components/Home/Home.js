@@ -3,6 +3,7 @@ import h1 from "./h6.jpg";
 import h2 from "./h7.jpg";
 import h3 from "./h8.jpg";
 import benifit from "./Benefits.png";
+import docCollect from './doc collect.jpg'
 import NewGST from "../GST/NewGST";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
@@ -38,7 +39,7 @@ setTimeout(()=>{
        <h2 style={{textAlign:'center', marginTop:'50px' ,color:'black'}}>Few Simple and  easy steps to fill your tax</h2>
        <div style={{display:'flex', justifyContent:'center',flexWrap:'wrap',gap:'50px' ,marginTop:'5vh'}}>
         <div className="1step" style={{border:'solid 7px grey ', borderRadius:'15px'}}><img style={{width:'200px' ,height:'180px'}} src="https://img.freepik.com/free-vector/hand-drawn-contact-information-background-template_23-2148189661.jpg?w=740&t=st=1708623501~exp=1708624101~hmac=a20af09e1357521096cc31740aaa6fac738659d84c3c768509cc42499e0a47a6"/> <h3 style={{textAlign:'center'}}>Connect Us &#8594;</h3> </div>
-        <div className="2step" style={{border:'solid 7px grey ', borderRadius:'15px'}}><img style={{width:'200px',height:'180px', display:'block'}} src="http://www.supremedriveuk.co.uk/wp-content/uploads/2018/02/document-1024x410.jpg" /> <h3 style={{textAlign:'center'}}> document collection &#8594;</h3></div>
+        <div className="2step" style={{border:'solid 7px grey ', borderRadius:'15px'}}><img style={{width:'200px',height:'180px', display:'block'}} src={docCollect} /> <h3 style={{textAlign:'center'}}> document collection &#8594;</h3></div>
         <div className="3step" style={{border:'solid 7px grey ', borderRadius:'15px'}}> <img style={{width:'200px', display:'block',height:'180px'}} src="https://play-lh.googleusercontent.com/BgA6x46ngHdBdEYkY7H0b3h3FlaQ-FI6HJKfaWCUkG8qlHEYLHiHwz4opWVKLGKAfRU=w240-h480-rw" /><h3 style={{textAlign:'center'}}>Payment/Receipt</h3></div>
        </div>
        </div>

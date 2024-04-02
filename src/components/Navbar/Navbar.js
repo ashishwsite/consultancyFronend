@@ -107,9 +107,16 @@ function Navbar() {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item">
+                <Link  style={{fontSize:'18px'}} className={`nav-link ${loct.pathname==="/contact"? "active": ""}`} to="/adminlogin">
+                  Admin
+                </Link>
+              </li>
             </ul>
-          </div>
+          </div> 
+
         </div>
+       
       </nav>
     </div>
   );
