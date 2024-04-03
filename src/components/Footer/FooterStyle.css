@@ -4,3 +4,8 @@
     justify-content: center;
     gap: 7.5vw;
 }
+@media (width<415px) {
+    .mobile_email{
+        display: none;
+    }
+}

@@ -24,7 +24,7 @@ function Footer() {
             </a>{" "}
           </div>
           <div>
-            <a href="#insta" target="_balank">
+            <a href="https://www.instagram.com/govindsharma7777?igsh=YmFicHY2enpjbjJ4&utm_source=qr" target="_balank">
               <img src="https://tax2win.in/assets-new/img/new-theme/insta.svg" />
             </a>{" "}
           </div>
@@ -53,8 +53,8 @@ function Footer() {
           </div>
         </div>
         <div
-          className="mobile_email"
-          style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop:'2px'}}
+          className="mobile_email "
+          // style={{ display: "flex", justifyContent: "center", gap: "10px", marginTop:'2px'}}
         >
           <div>
             <a href="#calllink">
@@ -67,7 +67,7 @@ function Footer() {
             </a>
           </div>
           <div>
-            <a href="#emaillink">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"  target="_balank">
               <img
                 src="https://tax2win.in/assets-new/img/new-theme/mail.svg"
                 alt="Call Now"

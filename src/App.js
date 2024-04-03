@@ -22,7 +22,7 @@ function App() {
     setalertstatus('none');
     setTimeout(()=>{
       setalertstatus('inline')
-    },3000);
+    },6000);
   }
   const onChange = (e) => {
     setCredentails({ ...credentials, [e.target.name]: e.target.value });
@@ -71,7 +71,7 @@ function App() {
     <Userstate>
       <Router>
         <Navbar />
-  <div style={{display:alertstatus,position:'fixed'}}>
+  <div style={{display:alertstatus,position:'fixed',width:'410px'}}>
          <div class="container" role="alert" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',border:'green 5px',backgroundColor:' rgb(29, 27, 28)', borderRadius:'25px'}}>
           <h4 style={{color:'whitesmoke'}}>Call us: +918178569324</h4>
           <button style={{backgroundColor:"gray" ,marginLeft:"4rem"}} onClick={alerthandle}>x</button>
