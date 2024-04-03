@@ -22,7 +22,7 @@ function App() {
     setalertstatus('none');
     setTimeout(()=>{
       setalertstatus('inline')
-    },6000);
+    },60000);
   }
   const onChange = (e) => {
     setCredentails({ ...credentials, [e.target.name]: e.target.value });

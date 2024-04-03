@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 7.5vw;
 }
-@media (width<415px) {
+@media (width<600px) {
     .mobile_email{
         display: none;
     }
