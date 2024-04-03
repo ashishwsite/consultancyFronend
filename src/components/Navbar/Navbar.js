@@ -1,8 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import Home from "../Home/Home";
 import { Link, useLocation } from "react-router-dom";
 import "./NabbarSty.css";
+import Usercontext from "../context/Usercontext";
+import Useritem from "../Useritem";
 function Navbar() {
+ 
+ 
    // LOCATION hook used
    let loct=useLocation();
   // useEffect(()=>{
@@ -108,7 +112,7 @@ function Navbar() {
                 </ul>
               </li>
               <li className="nav-item">
-                <Link  style={{fontSize:'18px'}} className={`nav-link ${loct.pathname==="/contact"? "active": ""}`} to="/adminlogin">
+                <Link  style={{fontSize:'18px'}} className={`nav-link ${loct.pathname==="/adminlogin"? "active": ""}`} to="/adminlogin">
                   Admin
                 </Link>
               </li>
@@ -118,6 +122,7 @@ function Navbar() {
         </div>
        
       </nav>
+     
     </div>
   );
 }

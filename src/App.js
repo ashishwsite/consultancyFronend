@@ -10,10 +10,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Services from "./components/Services/Services";
 import LoadingBar from "react-top-loading-bar";
 import { useState } from "react";
+// import Usercontext from "./components/context/Usercontext";
+import Userstate from "./components/context/Userstate";
+import Admin from "./Admin";
 function App() {
   const [progress, setProgress] = useState(0);
   return (
     <>
+    <Userstate>
       <Router>
         <Navbar />
         <LoadingBar
@@ -29,14 +33,16 @@ function App() {
             path="/contact"
             element={<Contact setProgress={setProgress} />}
           />
+          <Route path ="/adminlogin" element={<Admin/>}/>
           <Route path="/about" element={<About setProgress={setProgress} progress={progress} />} />
           <Route
             path="/services"
             element={<Services setProgress={setProgress} />}
           ></Route>
-        </Routes>
+         </Routes>
       </Router>
       <Footer />
+      </Userstate>
     </>
   );
 }
