@@ -8,6 +8,7 @@ import NewGST from "../GST/NewGST";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
+import Alert from "../Alert";
 
 function Home({setProgress}) {
   useEffect(

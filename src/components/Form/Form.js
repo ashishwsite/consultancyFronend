@@ -19,8 +19,7 @@ const Form = (props) => {
     console.log("handle sumit is call ")
 setbtnclr('red')
 //bad request sue to same email is present 
-    // const response = await fetch("https://consultanctbackend.onrender.com/contact", {  // render vala backend
-    // const response = await fetch(`${Backlink}/contact`, {  // hide backend link
+// const response=await fetch('http://localhost:3000/contact', {
       const response = await fetch('https://taxconsultancy.vercel.app/contact', {  // vercel vala backend
       method: "POST",
       headers: {

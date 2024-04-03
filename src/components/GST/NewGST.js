@@ -14,10 +14,10 @@ const NewGST = ({setProgress}) => {
   
   return (
     <div >
-     <div className="container" style={{display:'flex',justifyContent:'center',flexDirection:'column',margin:'10px'}}>
+     {/* <div className="container" style={{display:'flex',justifyContent:'center',flexDirection:'column',margin:'10px'}}>
       <h4 style={{textAlign:'center' ,color:'red'}}>GST return filling is now available </h4>
       <h2 style={{textAlign:'center',color:'green'}}>Call us 8178569324</h2>
-     </div>
+     </div> */}
      <div style={{marginTop:'3vh',backgroundColor:'rgb(36, 36, 44)'}} >
           <h3
             
