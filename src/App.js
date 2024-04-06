@@ -22,7 +22,7 @@ function App() {
     setalertstatus('none');
     setTimeout(()=>{
       setalertstatus('inline')
-    },3000);
+    },30000);
   }
   const onChange = (e) => {
     setCredentails({ ...credentials, [e.target.name]: e.target.value });
@@ -71,16 +71,17 @@ function App() {
     <Userstate>
       <Router>
         <Navbar />
-  <div style={{display:alertstatus,position:'fixed',width:'410px'}}>
+  <div style={{display:alertstatus,position:'fixed', top:"80px",right:"2px" ,width:'410px'}}>
          <div class="container" role="alert" style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',border:'green 5px',backgroundColor:' rgb(29, 27, 28)', borderRadius:'25px'}}>
-          <h4 style={{color:'whitesmoke'}}>Call us: +918178569324</h4>
+          <h3 style={{color:'whitesmoke'}}>Call us: +918178569324</h3>
           <button style={{backgroundColor:"gray" ,marginLeft:"4rem"}} onClick={alerthandle}>x</button>
        
         <form onSubmit={handleSubmit}>
-           <h5 style={{color:'whitesmoke'}}>Name</h5>
+           <h6 style={{color:'whitesmoke'}}>Name</h6>
            <input type='text' style={{width:'15em'}} value={credentials.name}  onChange={onChange} className="form-control" name="name"></input>
-           <h5 style={{color:'whitesmoke'}}>Phone Number</h5>
+           <h6 style={{color:'whitesmoke'}}>Phone Number</h6>
            <input type='text' style={{width:'15em'}} value={credentials.phone}  onChange={onChange} className="form-control" name="phone"></input>
+          {/* {credentials?<button type ="submit" style={{border:'solid 3px',borderRadius:'4px',marginLeft:'7px'}}>Submit</button>:<button style={{display:'none'}}>submit</button>} */}
            <button type ="submit" style={{border:'solid 3px',borderRadius:'4px',marginLeft:'7px'}}>Submit</button>
          
         </form>
