@@ -13,7 +13,7 @@ function Footer() {
         }}
       >
         E'Tax Consultancy-Self Service Portal, an initiative to fill Gst online
-        by expert CA/Accountant
+        by expert.
         <div className="icons">
           <div>
             <a
