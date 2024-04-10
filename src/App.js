@@ -13,7 +13,7 @@ import { useState } from "react";
 // import Usercontext from "./components/context/Usercontext";
 import Userstate from "./components/context/Userstate";
 import Admin from "./Admin";
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
 function App() {
   const [progress, setProgress] = useState(0);
   const [alertstatus,setalertstatus]=useState('inline')

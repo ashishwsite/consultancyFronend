@@ -16,6 +16,7 @@ const Admin = () => {
     if(admin.email=='1508ramashish@gmail.com' && admin.password=='12345678'){
         console.log("Admin login success");
         alert("login successs")
+        
         setformdis('none')
         setdipst('inline')
     }
