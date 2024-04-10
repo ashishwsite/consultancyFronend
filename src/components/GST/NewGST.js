@@ -32,6 +32,8 @@ const NewGST = ({setProgress}) => {
             <img className="img-fluid" src={benifit}></img>
           </div>
         </div>
+        <br></br>
+        {/* Overview SECTION START */}
      <diV className="container" style={{padding:'10px'}}>
       <h4  style={{textAlign:'center',color:'yellow'}}>Gst Return Filling -Overview</h4>
       <p style={{fontSize:'20px',marginTop:'1vh'}}>
@@ -39,7 +41,7 @@ const NewGST = ({setProgress}) => {
       </p>
      </diV>
      <div className="container" style={{padding:'10px'}}>
-      <h4 style={{textAlign:'center' ,color:'rebeccapurple'}}>Eligbilty</h4>
+      <h2 style={{textAlign:'center' ,color:'green'}}>Prerequisite</h2>
       <p style={{padding:'5px',fontSize:'20px'}}>
       In the GST norms, any regular business has to file three monthly returns and one annual return
       </p>

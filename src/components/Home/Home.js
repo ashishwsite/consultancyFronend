@@ -36,6 +36,7 @@ setTimeout(()=>{
          <Link to='/contact' style={{border:'solid 2px ',backgroundColor:'purple', width:'4em', borderRadius:'10px' ,marginLeft:'5px'}}>Fill ITR</Link>
         </div>
        </div>
+       {/* //steps of filing  */}
        <div style={{backgroundColor:'rgb(86, 86, 86)'}}>
        <h2 style={{textAlign:'center', marginTop:'50px' ,color:'black'}}>Few Simple and  easy steps to fill your tax</h2>
        <div style={{display:'flex', justifyContent:'center',flexWrap:'wrap',gap:'50px' ,marginTop:'5vh'}}>
@@ -44,9 +45,12 @@ setTimeout(()=>{
         <div className="3step" style={{border:'solid 7px grey ', borderRadius:'15px'}}> <img style={{width:'200px', display:'block',height:'180px'}} src="https://play-lh.googleusercontent.com/BgA6x46ngHdBdEYkY7H0b3h3FlaQ-FI6HJKfaWCUkG8qlHEYLHiHwz4opWVKLGKAfRU=w240-h480-rw" /><h3 style={{textAlign:'center'}}>Payment/Receipt</h3></div>
        </div>
        </div>
+       
         <div  style={{marginTop:'20px'}}><NewGST/></div>
-        <div style={{marginTop:'120px'}}><About/></div>
-        <div style={{marginTop:'50px'}}><Contact/></div>
+        {/* <div style={{marginTop:'120px'}}><About/></div> */}
+        {/* <div style={{marginTop:'50px'}}><Contact/></div> */}
+        <br></br>
+        <br></br>
       </div>
     
   );

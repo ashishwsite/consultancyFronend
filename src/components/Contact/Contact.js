@@ -13,7 +13,7 @@ const Contact = ({setProgress}) => {
   return (
     <>
    <h1 style={{textAlign:'center'}}>Contact_us</h1>
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex", justifyContent: "center",}}>
       <div className="row contact-form" style={{marginLeft:"15px"}} >
         <div><img
         className="w-100 img-fluid " style={{height:'50vh' ,opacity:'0.2'}}
