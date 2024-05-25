@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import UserF from './components/UserF'
-
+import QrImg from './imge/QR_code.png';
 const Admin = () => {
     const [dipSt,setdipst]=useState('none')
     const [formdip,setformdis]=useState('inline')
@@ -38,7 +38,13 @@ const Admin = () => {
         <div className='container' style={{display:dipSt}}>
         < UserF/>
         </div>
-        
+       
+       <br></br>
+       <br></br>
+        <div >
+          <img className='imgfluid' height="120" width="150" src={QrImg}  />
+        </div>
+        <br></br>
     </div>
   )
 }
